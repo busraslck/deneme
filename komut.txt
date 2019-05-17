@@ -1,0 +1,70 @@
+git init
+Bu komut, bulunduðumuz dizinde .git adýnda bir dizin oluþturur ve bir Git repository’si haline getirir.
+Daha sonra bu repository’yi uzaktaki bir sunucuya gönderebilirsiniz.
+
+
+git config
+Kullanýcý adý, mail vb. yapýlandýrma ayarlarýnýn yapýldýðý komuttur.
+
+
+git status
+Yapýlan deðiþiklikleri; yani eklenen, silinen dosyalarýn hangi branch’te olduðunu gösterir.
+
+
+git add <dosya_ismi>
+Projeye eklenmek istenen dosyalarý add komutuyla Git içerisine ekler ve git status ile tekrar kontrol edebiliriz.
+
+
+git reset <dosya_ismi>
+Dosyalarda yaptýðýmýz deðiþiklikleri geri almak istediðimizde bu komutu kullanýrýz.
+
+
+git commit
+Bu komut yoluyla projedeki deðiþikleri local repository’e kaydederiz.
+
+
+git log
+Projede hangi commit’lerin yapýldýðýný görüntülememizi saðlar.
+
+
+git branch
+Proje içerisinde bulunan brach’lerin oluþumlarýný görmek istediðimizde bu komutu kullanýrýz.
+Bize Local repository’de bulunan tüm branch’lerin bilgisini verir.
+
+git branch <branch_ismi>
+Proje içinde yeni brach oluþturmak istediðimizde kullanýrýz.
+
+
+git branch –d <silinecek_branch_name>
+Yeni branch oluþturuldu, geliþtirmeler tamamlandý, ana branch ile birleþtirildi;
+bunlarýn ardýndan oluþturulan branch’i silmek istersek bu komutu kullanýrýz.
+
+
+git checkout <branch_ismi>
+Branch’ler arasý geçiþ yapmak istediðimizde kullanýrýz. Yeni bir branch oluþturulduðunda doðrudan o branch’te çalýþmaya baþlamayýz; 
+öncelikle o branch’e geçmemiz gerekir.
+
+
+git checkout -b <branch_ismi>
+Bu komutta ise iki iþlem ayný anda yaptýrýlýr: Yani branch oluþurulur ve oluþturulan branch’e geçiþ yapýlýr.
+
+git pull
+Proje içerisinde master branch’den projenin en güncel halini almak için kullanýlýr.
+
+
+git push
+Proje geliþtirme aþamasýnda commitlenmiþ deðiþiklerin uzaktaki sunucuya iletilmesini saðlayan komuttur.
+
+
+git merge <branch_ismi>
+Yeni branch oluþturulup üzerinde çalýþýldýktan sonra proje bütünlüðünü saðlamak için branch’lerimizi birleþtirmeliyiz.
+Merge komutu bu iþlemi gerçekleþtirmek için kullanýlýr.
+
+$ git checkout dev
+$ git merge serap
+Bu komut dizisi ile serap adlý branch’i dev branch’i ile birleþtirdik.
+
+
+git clone <url>
+Uzak sunucudaki bir proje üzerinde geliþtirme yapmak istersek, o projeyi bilgisayarýmýza kopyalayýp ardýndan geliþtirmeye devam etmeliyiz.
+Bu komutla da bilgisayarýmýza kopyalama iþlemini gerçekleþtiririz.
